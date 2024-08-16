@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./costume.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
+    <script src="../src/splide.min.js"></script>
+    <link rel="stylesheet" href="./splide.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head w-full items-center border-b">
+        <div class="flex w-11/12 mx-auto justify-between py-7">
+          <div class="lhead flex">
+            <div class="md:hidden content-center">
+              <div class="block">
+                <button
+                  class="block ml-100 outline-none"
+                  type="button"
+                  data-dropdown-toggle="dropdown"
+                >
+                  <img
+                    class="w-9 cursor-pointer mr-[130px] md:hidden"
+                    src="../images/icons8-menu-50.png"
+                    alt="burgermenu"
+                  />
+                </button>
+              </div>
+
+              <div
+                class="w-full hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4 duration-700"
+                id="dropdown"
+              >
+                <ul class="py-1" aria-labelledby="dropdown">
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >HOME</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >Client</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-96 text-sm hover:text-blue-500 block px-4 py-2"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="w-[150px] object-contain cursor-pointer left-1/3 md:static"
+              src="../images/logo.png"
+              alt="logo"
+            />
+          </div>
+          <div class="rhead hidden xl:flex">
+            <div class="workdays flex p-2">
+              <img
+                class="px-4 w-20 object-contain"
+                src="../images/icons8-clock-30.png"
+                alt="clock"
+              />
+              <div class="workdayscontent flex flex-col">
+                <span class="font-normal">Monday - Friday 08:00 - 20:00</span>
+                <span class="text-gray-500">Saturday and Sunday - CLOSED</span>
+              </div>
+            </div>
+
+            <div class="loc flex p-2">
+              <img
+                class="px-4 w-20 object-contain"
+                src="../images/icons8-location-30.png"
+                alt="location"
+              />
+              <div class="loccontent flex flex-col">
+                <span>34th Avenue</span>
+                <span class="text-gray-500">New York, W2 3XE</span>
+              </div>
+            </div>
+            <div class="followus flex p-2">
+              <img
+                class="px-4 w-20 object-contain"
+                src="../images/icons8-hand-right-30.png"
+                alt="followUs"
+              />
+              <div class="followuscontent flex flex-col">
+                <span>Follow Us</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="hidden md:block">
+        <div class="w-full">
+          <div class="flex w-11/12 mx-auto justify-between">
+            <div class="lnav flex">
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span
+                    class="p-3 cursor-pointer text-blue-500 hover:homecontent:block"
+                    >Home</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span class="p-3 cursor-pointer hover:text-blue-500"
+                    >Pages</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span class="p-3 cursor-pointer hover:text-blue-500"
+                    >Portfolio</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span class="p-3 cursor-pointer hover:text-blue-500"
+                    >Blogs</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span class="p-3 cursor-pointer hover:text-blue-500"
+                    >Elements</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn px-2 py-4">
+                  <span class="p-3 cursor-pointer hover:text-blue-500"
+                    >Shop</span
+                  >
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="rnav gridfixer grid grid-cols-4 items-center content-center w-52 max-lg:hidden"
+              >
+                <span class="cursor-pointer">EN</span>
+                <img
+                  class="w-6 cursor-pointer"
+                  src="../images/search.png"
+                  alt="search"
+                />
+                <img
+                  class="w-10 cursor-pointer"
+                  src="../images/bag-icon-shopping-bag-icon-bag-logo-bag-illustration-free-vector.jpg"
+                  alt="cart"
+                />
+                <img
+                  class="w-7 h-7 cursor-pointer"
+                  src="../images/icons8-menu-50.png"
+                  alt="menu"
+                />
+              </div>
+              <div class="">
+                <button
+                  onclick="myFunction()"
+                  id="bookButton"
+                  class="hidden dropbtn xl:inline"
+                >
+                  <span class="cursor-pointer bg-blue-500 text-white p-3"
+                    >Book Appointment</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="form"
+          class="w-full bg-sky-500 absolute z-30 opacity-70 md:block"
+        >
+          <div
+            class="reserve py-4 text-white flex justify-between w-11/12 mx-auto"
+          >
+            <span class="text-lg py-2">Book a Visit</span>
+            <form action="#" method="get">
+              <label class="hidden" for="Department"
+                >Choose your department:</label
+              >
+              <input
+                placeholder="Departments"
+                class="bg-transparent py-2"
+                list="Departments"
+                name="Department"
+                id="Department"
+              />
+              <datalist id="Departments">
+                <option value="Cardiology"></option>
+                <option value="Endocinology"></option>
+                <option value="General Surgery"></option>
+                <option value="Micro Biology"></option>
+                <option value="Neurology"></option>
+              </datalist>
+
+              <label class="hidden" for="browser">Choose your doctor:</label>
+              <input
+                placeholder="Doctors"
+                class="bg-sky-500 py-2"
+                list="Doctors"
+                name="Doctor"
+                id="Doctor"
+              />
+              <datalist id="Doctors">
+                <option value="Doctor"></option>
+              </datalist>
+
+              <label class="hidden" for="Name">fullname</label>
+              <input
+                placeholder="Your Full Name"
+                class="py-2"
+                id="Name"
+                type="text"
+              />
+
+              <label class="hidden" for="Phone">Phone Number</label>
+              <input placeholder="Phone" class="py-2" id="Phone" type="tel" />
+
+              <label class="hidden" for="Date">Date</label>
+              <input placeholder="Date" class="py-2" id="Date" type="date" />
+
+              <label class="hidden" for="Time">Time</label>
+              <input class="py-2" placeholder="Time" id="Time" type="time" />
+              <button class="px-4 py-2 bg-white text-gray-700" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="first-carousel">
+      <div class="t-fixer">
+        <div
+          data-ride="carousel"
+          data-interval="2500"
+          id="carouselExampleIndicators"
+          class="carousel slide"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="h1-slider mx-auto flex z-20 text-center content-center"
+              >
+                <div class="container mx-auto md:flex">
+                  <div
+                    class="flex flex-col text-white items-center justify-center"
+                  >
+                    <span class="text-2xl py-4 md:text-6xl"
+                      >Healthy LifesStyle</span
+                    >
+                    <p class="text-xl w-1/2">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam veritatis magnam harum perferendis, inventore
+                      distinctio?
+                    </p>
+                    <div class="py-6 flex">
+                      <button class="px-5 py-4 bg-blue-500">Purchase</button>
+                      <button class="ml-5 px-4 py-4 bg-white text-gray-700">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="h2-slider mx-auto flex z-20 text-center content-center"
+              >
+                <div class="container mx-auto justify-around md:flex">
+                  <div
+                    class="flex flex-col text-white items-center justify-center"
+                  >
+                    <span class="text-2xl py-6 md:text-6xl"
+                      >Healthy LifesStyle</span
+                    >
+                    <p class="text-xl w-1/2">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam veritatis magnam harum perferendis, inventore
+                      distinctio?
+                    </p>
+                    <div class="py-10 flex">
+                      <button class="px-5 py-4 bg-blue-500">Purchase</button>
+                      <button class="ml-5 px-4 py-4 bg-white text-gray-700">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="h3-slider mx-auto flex z-20 text-center content-center"
+              >
+                <div class="container mx-auto justify-around md:flex">
+                  <div
+                    class="flex flex-col text-white items-center justify-center"
+                  >
+                    <span class="text-2xl py-6 md:text-6xl"
+                      >Healthy LifesStyle</span
+                    >
+                    <p class="text-xl w-1/2">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam veritatis magnam harum perferendis, inventore
+                      distinctio?
+                    </p>
+                    <div class="py-10 flex">
+                      <button class="px-5 py-4 bg-blue-500">Purchase</button>
+                      <button class="ml-5 px-4 py-4 bg-white text-gray-700">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray-content">
+      <div class="bg-neutral-100 w-full relative gray-fixer">
+        <div
+          class="absolute -top-20 left-[8%] shadow-lg w-10/12 flex z-30 flex-col mx-auto md:flex-row lg:h-2/4"
+        >
+          <div class="w-full h-full border-r-2 text-black bg-white md:w-4/12">
+            <div class="gray-wwag flex flex-col p-6">
+              <span class="text-blue-500 py-3">Qualified Doctors</span>
+              <span>WHERE PEOPLE COME FIRST</span>
+              <p class="text-gray-800 py-3">
+                Lorem ipsum dolor sit amet, conse. Proin gravida nibh vel velit
+                auctor aliquet. Aenean sollique ancitudi.
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-full border-r-2 text-black bg-white md:w-4/12">
+            <div class="gray-wwag flex flex-col p-6">
+              <span class="text-blue-500 py-3">Qualified Doctors</span>
+              <span>WHERE PEOPLE COME FIRST</span>
+              <p class="text-gray-800 py-3">
+                Lorem ipsum dolor sit amet, conse. Proin gravida nibh vel velit
+                auctor aliquet. Aenean sollique ancitudi.
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-full border-r-2 text-black bg-white md:w-4/12">
+            <div class="gray-wwag flex flex-col p-6">
+              <span class="text-blue-500 py-3">Qualified Doctors</span>
+              <span>WHERE PEOPLE COME FIRST</span>
+              <p class="text-gray-800 py-3">
+                Lorem ipsum dolor sit amet, conse. Proin gravida nibh vel velit
+                auctor aliquet. Aenean sollique ancitudi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trustus w-full mx-auto absolute bottom-0">
+          <div class="flex justify-evenly flex-col md:flex-row">
+            <div
+              class="flex flex-col w-11/12 p-4 lg:flex-row gap-7 mx-auto justify-around items-center"
+            >
+              <div
+                id="carouselIndicators"
+                class="carousel slide max-w-md flex-shrink-0"
+                data-ride="carousel"
+                data-interval="2000"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="flex flex-col w-2/3 mx-auto">
+                      <h4 class="text-2xl py-5">Trust Us</h4>
+                      <span class="text-xl text-gray-700">
+                        ppl come first.we provide best quality care.
+                      </span>
+                      <p class="text-gray-600 py-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates, soluta?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="flex flex-col w-2/3 mx-auto">
+                      <h4 class="text-2xl py-5">Trust Us</h4>
+                      <span class="text-xl text-gray-700">
+                        ppl come first.we provide best quality care.
+                      </span>
+                      <p class="text-gray-600 py-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates, soluta?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="flex flex-col w-2/3 mx-auto">
+                      <h4 class="text-2xl py-5">Trust Us</h4>
+                      <span class="text-xl text-gray-700">
+                        ppl come first.we provide best quality care.
+                      </span>
+                      <p class="text-gray-600 py-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates, soluta?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselIndicators"
+                  data-bs-slide="prev"
+                >
+                  <img
+                    class="w-6"
+                    src="../images/icons8-double-left-96.png"
+                    alt=""
+                  />
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselIndicators"
+                  data-bs-slide="next"
+                >
+                  <img
+                    class="w-6"
+                    src="../images/icons8-double-right-96.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <img class="we-care-image" src="../images/h-img-1.jpg" alt="" />
+              <img class="we-care-image" src="../images/h-img-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full">
+        <div class="flex flex-col text-center py-7">
+          <span>CHOOSE DEPARTMENT</span>
+          <span class="text-gray-700"
+            >Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+            velit auctor aliquetenean. Cum sociis Theme natoque penatibus et
+            magnis dis parturient nascetur ridiculus mus</span
+          >
+        </div>
+        <div
+          class="grid-middle flex flex-col grid-cols-3 grid-rows-2 w-10/12 mx-auto md:grid"
+        >
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-1.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-2.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-3.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-4.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-5.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+          <div class="flex flex-col p-9">
+            <img
+              class="w-16 h-16 object-contain"
+              src="../images/h-custom-icon-6.png"
+              alt=""
+            />
+            <span class="text-2xl pt-8">Primary HealthCare</span>
+            <p class="text-gray-700 py-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, itaque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        id="new-product"
+        class="flex flex-col mx-auto splide carousel-3x"
+        aria-label="Custom Arrows Example"
+      >
+        <div class="flex flex-col w-11/12 mx-auto text-center py-16">
+          <span class="text-3xl text-white leading-9 font-bold"
+            >Latest Tips & News</span
+          >
+          <span class="text-lg text-white leading-8 py-6"
+            >Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+            velit auctor aliquetenean. Cum sociis Theme natoque penatibus et
+            magnis dis parturient nascetur ridiculus mus</span
+          >
+        </div>
+
+        <div class="splide__track w-11/12 mx-auto">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="w-[400px] bg-white text-left justify-around">
+                <div class="flex flex-col justify-around p-7">
+                  <span class="bg-blue-600 text-white w-1/3 px-3 py-2"
+                    >July11,2016</span
+                  >
+                  <span class="text-lg leading-8 font-semibold py-6"
+                    >Providing Better Health Care For Families</span
+                  >
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod, doloremque praesentium dolore quisquam culpa sapiente.
+                  </p>
+                  <div class="flex border-t-2 p-3">
+                    <img
+                      class="w-8 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <span class="text-slate-600 px-5"
+                      >by Dr Catherine Castillo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev !top-3/4">
+            <img src="../images/icons8-double-left-96.png" alt="" />
+          </button>
+          <button class="splide__arrow splide__arrow--next !top-3/4">
+            <img src="../images/icons8-double-right-96.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-middle py-24 bg-neutral-100">
+        <div class="w-10/12 mx-auto text-center">
+          <div class="flex flex-col py-10">
+            <span class="text-lg leading-5 text-blue-600 py-7"
+              >24 Hour Service</span
+            >
+            <span class="text-2xl leading-9 font-bold pb-16"
+              >Medigroup Services</span
+            >
+            <div class="flex justify-evenly gap-5 w-8/12 mx-auto max-sm:hidden">
+              <div class="flex flex-col items-center">
+                <button class="border bg-white p-2 rounded-full">
+                  <img
+                    class="w-6 h-8 object-contain"
+                    src="../images/h-tab-slider-custom-icon-1.png"
+                    alt=""
+                  />
+                </button>
+                <span class="font-bold text-gray-700 hover:underline"
+                  >Rehabilitation</span
+                >
+              </div>
+              <div class="flex flex-col items-center">
+                <button class="border bg-white p-2 rounded-full">
+                  <img
+                    class="w-6 h-8 object-contain"
+                    src="../images/h-tab-slider-custom-icon-2.png"
+                    alt=""
+                  />
+                </button>
+                <span class="font-bold text-gray-700 hover:underline"
+                  >optometry</span
+                >
+              </div>
+              <div class="flex flex-col items-center">
+                <button class="border bg-white p-2 rounded-full">
+                  <img
+                    class="w-6 h-8 object-contain"
+                    src="../images/h-tab-slider-custom-icon-4.png"
+                    alt=""
+                  />
+                </button>
+                <span class="font-bold text-gray-700 hover:underline"
+                  >Geriatrics</span
+                >
+              </div>
+              <div class="flex flex-col items-center">
+                <button class="border bg-white p-2 rounded-full">
+                  <img
+                    class="w-6 h-8 object-contain"
+                    src="../images/h-tab-slider-custom-icon-5.png"
+                    alt=""
+                  />
+                </button>
+                <span class="font-bold text-gray-700 hover:underline"
+                  >Heart Surgery</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="carouselExSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-interval="1000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex flex-col md:flex-row">
+                  <img
+                    class="md:w-1/2"
+                    src="../images/h-tab-slide-1.jpg"
+                    alt=""
+                  />
+
+                  <div class="flex flex-col text-left p-5 bg-white">
+                    <span class="text-2xl font-bold py-10"
+                      >Rehabilitation center.</span
+                    >
+                    <span class="text-lg text-gray-700"
+                      >A Great Place to Work. A Great Place to Receive Care.
+                      Leading Medicine.</span
+                    >
+                    <p class="py-8">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur, consectetur, optio ipsam cum aperiam
+                      voluptates voluptatem reiciendis cupiditate voluptatibus
+                      non esse ducimus facere repudiandae qui, quo id?
+                      Excepturi, aliquam non.
+                    </p>
+                    <button class="px-3 py-3 bg-blue-500 text-white w-fit">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex flex-col md:flex-row">
+                  <img
+                    class="md:w-1/2"
+                    src="../images/h-tab-slide-2.jpg"
+                    alt=""
+                  />
+
+                  <div class="flex flex-col text-left p-5 bg-white">
+                    <span class="text-2xl font-bold py-10"
+                      >Rehabilitation center.</span
+                    >
+                    <span class="text-lg text-gray-700"
+                      >A Great Place to Work. A Great Place to Receive Care.
+                      Leading Medicine.</span
+                    >
+                    <p class="py-8">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur, consectetur, optio ipsam cum aperiam
+                      voluptates voluptatem reiciendis cupiditate voluptatibus
+                      non esse ducimus facere repudiandae qui, quo id?
+                      Excepturi, aliquam non.
+                    </p>
+                    <button class="px-3 py-3 bg-blue-500 text-white w-fit">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex flex-col md:flex-row">
+                  <img
+                    class="md:w-1/2"
+                    src="../images/h-tab-slide-3.jpg"
+                    alt=""
+                  />
+
+                  <div class="flex flex-col text-left p-5 bg-white">
+                    <span class="text-2xl font-bold py-10"
+                      >Rehabilitation center.</span
+                    >
+                    <span class="text-lg text-gray-700"
+                      >A Great Place to Work. A Great Place to Receive Care.
+                      Leading Medicine.</span
+                    >
+                    <p class="py-8">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur, consectetur, optio ipsam cum aperiam
+                      voluptates voluptatem reiciendis cupiditate voluptatibus
+                      non esse ducimus facere repudiandae qui, quo id?
+                      Excepturi, aliquam non.
+                    </p>
+                    <button class="px-3 py-3 bg-blue-500 text-white w-fit">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex flex-col md:flex-row">
+                  <img
+                    class="md:w-1/2"
+                    src="../images/h-tab-slide-4.jpg"
+                    alt=""
+                  />
+
+                  <div class="flex flex-col text-left p-5 bg-white">
+                    <span class="text-2xl font-bold py-10"
+                      >Rehabilitation center.</span
+                    >
+                    <span class="text-lg text-gray-700"
+                      >A Great Place to Work. A Great Place to Receive Care.
+                      Leading Medicine.</span
+                    >
+                    <p class="py-8">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur, consectetur, optio ipsam cum aperiam
+                      voluptates voluptatem reiciendis cupiditate voluptatibus
+                      non esse ducimus facere repudiandae qui, quo id?
+                      Excepturi, aliquam non.
+                    </p>
+                    <button class="px-3 py-3 bg-blue-500 text-white w-fit">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-middle">
+        <div class="flex flex-col mx-auto text-center py-28">
+          <span class="text-3xl font-bold text-neutral-700"
+            >Excellence Is Our Speciality</span
+          >
+          <p class="leading-8 text-xl text-stone-500 w-8/12 mx-auto py-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            incidunt numquam ea laudantium itaque iusto molestiae repellat
+            asperiores magni impedit ullam ab consequatur, aliquid quaerat
+            minima nihil libero voluptas sapiente?
+          </p>
+          <div class="flex flex-col gap-5 xl:flex-row">
+            <div class="flex flex-col items-center">
+              <img
+                class="w-1/2 h-auto min-w-96"
+                src="../images/h-img-4.jpg"
+                alt=""
+              />
+              <span class="text-lg font-bold text-neutral-700 py-6"
+                >With us, it’s always personal.</span
+              >
+              <p class="text-stone-500 p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo incidunt numquam ea laudantium itaque iusto molestiae
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                class="w-1/2 h-auto min-w-96"
+                src="../images/h-img-5.jpg"
+                alt=""
+              />
+              <span class="text-lg font-bold text-neutral-700 py-6"
+                >Donate Blood. Help Others.</span
+              >
+              <p class="text-stone-500 p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo incidunt numquam ea laudantium itaque iusto molestiae
+              </p>
+            </div>
+
+            <div class="flex flex-col flex-shrink-0 min-w-[400px]">
+              <div class="box" id="box1">
+                <div
+                  onclick="toggleImage(event)"
+                  class="flex py-3 px-3 justify-between hover:bg-neutral-300"
+                  data-img-id="image2"
+                >
+                  <span class="text-gray-500 leading-5"
+                    >Embrace Your Health</span
+                  >
+                  <img
+                    id="image1"
+                    class="w-4 h-auto image"
+                    src="../src/image1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child">
+                  <p class="p-2 leading-7 text-neutral-300 max-w-[300px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum ratione repellendus dolore odio facere ea!
+                  </p>
+                  <div class="flex px-2">
+                    <img
+                      class="w-5 h-auto object-contain"
+                      src="../images/icons8-download-20.png"
+                      alt=""
+                    />
+                    <span class="text-blue-500 hover:underline px-3"
+                      >Download Brochure</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="box" id="box2">
+                <div
+                  onclick="toggleImage(event)"
+                  class="flex py-3 px-3 justify-between hover:bg-neutral-300"
+                  data-img-id="image2"
+                >
+                  <span class="text-gray-500 leading-5"
+                    >Embrace Your Health</span
+                  >
+                  <img
+                    id="image2"
+                    class="w-4 h-auto image"
+                    src="../src/image1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child">
+                  <p class="p-2 leading-7 text-neutral-300 max-w-[300px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum ratione repellendus dolore odio facere ea!
+                  </p>
+                  <div class="flex px-2">
+                    <img
+                      class="w-5 h-auto object-contain"
+                      src="../images/icons8-download-20.png"
+                      alt=""
+                    />
+                    <span class="text-blue-500 hover:underline px-3"
+                      >Download Brochure</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="box" id="box3">
+                <div
+                  onclick="toggleImage(event)"
+                  class="flex py-3 px-3 justify-between hover:bg-neutral-300"
+                  data-img-id="image2"
+                >
+                  <span class="text-gray-500 leading-5"
+                    >Embrace Your Health</span
+                  >
+                  <img
+                    id="image3"
+                    class="w-4 h-auto image"
+                    src="../src/image1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child">
+                  <p class="p-2 leading-7 text-neutral-300 max-w-[300px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum ratione repellendus dolore odio facere ea!
+                  </p>
+                  <div class="flex px-2">
+                    <img
+                      class="w-5 h-auto object-contain"
+                      src="../images/icons8-download-20.png"
+                      alt=""
+                    />
+                    <span class="text-blue-500 hover:underline px-3"
+                      >Download Brochure</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="box" id="box4">
+                <div
+                  onclick="toggleImage(event)"
+                  class="flex py-3 px-3 justify-between hover:bg-neutral-300"
+                  data-img-id="image4"
+                >
+                  <span class="text-gray-500 leading-5"
+                    >Embrace Your Health</span
+                  >
+                  <img
+                    id="image4"
+                    class="w-4 h-auto image"
+                    src="../src/image1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child">
+                  <p class="p-2 leading-7 text-neutral-300 max-w-[300px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum ratione repellendus dolore odio facere ea!
+                  </p>
+                  <div class="flex px-2">
+                    <img
+                      class="w-5 h-auto object-contain"
+                      src="../images/icons8-download-20.png"
+                      alt=""
+                    />
+                    <span class="text-blue-500 hover:underline px-3"
+                      >Download Brochure</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="meaningLessNumbers grid-middle grid grid-cols-4 text-white max-md:grid-cols-2"
+      >
+        <div class="flex flex-col items-center py-16">
+          <span id="count1" class="text-5xl pb-5">168</span>
+          <span class="text-lg">Satisfied Patients</span>
+        </div>
+        <div class="flex flex-col items-center py-16">
+          <span id="count2" class="text-5xl pb-5"></span>
+          <span class="text-lg">Health Departments</span>
+        </div>
+        <div class="flex flex-col items-center py-16">
+          <span id="count3" class="text-5xl pb-5"></span>
+          <span class="text-lg">Blood Donations</span>
+        </div>
+        <div class="flex flex-col items-center py-16">
+          <span id="count4" class="text-5xl pb-5"></span>
+          <span class="text-lg">Different Services</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-middle bg-neutral-100">
+        <div class="w-10/12 mx-auto text-center">
+          <h2 class="text-neutral-700 pt-11">We Are Here For You</h2>
+          <h5 class="text-neutral-700 py-5">
+            Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+            velit auctor aliquetenean. Cum sociis Theme natoque penatibus et
+            magnis dis parturient nascetur ridiculus mus
+          </h5>
+          <div
+            class="flex flex-col mx-auto splide"
+            id="featured-product"
+            aria-label="Custom Arrows Example"
+          >
+            <div class="splide__track w-11/12 mx-auto pb-5">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-1 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-2 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-3 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-1 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-2 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="flex flex-col bg-white">
+                    <div
+                      class="three-icons-3 flex relative group hover:backdrop:"
+                    >
+                      <img
+                        class="hidden absolute top-1/2 left-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-linked-in-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 left-[40%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-skype-50.png"
+                        alt=""
+                      />
+                      <img
+                        class="hidden absolute top-1/2 right-[10%] group-hover:inline opacity-70 cursor-pointer"
+                        src="../images/icons8-twitter-50.png"
+                        alt=""
+                      />
+                    </div>
+                    <h5 class="text-blue-500 py-3">Dr Catherine Castillo</h5>
+                    <span class="text-neutral-700 pb-4">Neurologist</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev !top-3/4">
+                <img src="../images/icons8-double-left-96.png" alt="" />
+              </button>
+              <button class="splide__arrow splide__arrow--next !top-3/4">
+                <img src="../images/icons8-double-right-96.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="grid-middle">
+        <div class="w-11/12 mx-auto">
+          <div
+            class="flex flex-col mt-32 gap-7 justify-evenly items-center xl:flex-row"
+          >
+            <div class="p-5 flex flex-col bg-neutral-100">
+              <h4 class="text-blue-500">We are here for you.</h4>
+              <h2 class="text-black py-5">Book Appointment</h2>
+              <form
+                class="grid grid-cols-2 gap-x-3 gap-y-6"
+                action="#"
+                method="get"
+              >
+                <label class="hidden" for="Department"
+                  >Choose your department:</label
+                >
+                <input
+                  placeholder="Departments"
+                  list="Departments"
+                  name="Department"
+                  id="Department"
+                />
+                <datalist id="Departments">
+                  <option value="Cardiology"></option>
+                  <option value="Endocinology"></option>
+                  <option value="General Surgery"></option>
+                  <option value="Micro Biology"></option>
+                  <option value="Neurology"></option>
+                </datalist>
+
+                <label class="hidden" for="browser">Choose your doctor:</label>
+                <input
+                  placeholder="Doctors"
+                  class="py-2"
+                  list="Doctors"
+                  name="Doctor"
+                  id="Doctor"
+                />
+                <datalist id="Doctors">
+                  <option value="Doctor"></option>
+                </datalist>
+
+                <label class="hidden" for="Name">fullname</label>
+                <input
+                  placeholder="Your Full Name"
+                  class="py-2"
+                  id="Name"
+                  type="text"
+                />
+
+                <label class="hidden" for="Phone">Phone Number</label>
+                <input placeholder="Phone" class="py-2" id="Phone" type="tel" />
+
+                <label class="hidden" for="Date">Date</label>
+                <input placeholder="Date" class="py-2" id="Date" type="date" />
+
+                <label class="hidden" for="Time">Time</label>
+                <input
+                  class="py-2 text-neutral-100"
+                  placeholder="Time"
+                  id="Time"
+                  type="time"
+                />
+
+                <label for="txt"></label>
+                <textarea
+                  class="resize-none col-span-2"
+                  name="txt"
+                  id="txt"
+                  rows="4"
+                  cols="50"
+                  placeholder="special request"
+                ></textarea>
+                <button class="px-1 py-2 bg-blue-500 text-white" type="submit">
+                  BOOK
+                </button>
+              </form>
+            </div>
+
+            <div class="flex flex-col gap-7 content-center xl:w-1/2">
+              <h2 class="py-5">CUSTOMER REVIEWS</h2>
+              <div class="flex mx-auto">
+                <img
+                  class="w-12 object-contain"
+                  src="../images/quotes.png"
+                  alt=""
+                />
+                <div class="items-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus asperiores quia consequuntur ab quae voluptatum
+                    blanditiis labore aspernatur, iste iure ex facilis
+                    consectetur accusantium. Tempore consectetur voluptates
+                    totam ullam pariatur.
+                  </p>
+                  <div class="flex py-5">
+                    <img
+                      class="w-20 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <div class="flex flex-col ml-5">
+                      <span class="text-slate-600 px-5">Andrew Myers</span>
+                      <span class="text-blue-500 px-5"
+                        >Cardiovascular Deseases</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mx-auto">
+                <img
+                  class="w-12 object-contain"
+                  src="../images/quotes.png"
+                  alt=""
+                />
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus asperiores quia consequuntur ab quae voluptatum
+                    blanditiis labore aspernatur, iste iure ex facilis
+                    consectetur accusantium. Tempore consectetur voluptates
+                    totam ullam pariatur.
+                  </p>
+                  <div class="flex py-5">
+                    <img
+                      class="w-20 object-contain rounded-full"
+                      src="../images/avatar.jpeg"
+                      alt=""
+                    />
+                    <div class="flex flex-col ml-5">
+                      <span class="text-slate-600 px-5">Andrew Myers</span>
+                      <span class="text-blue-500">Cardiovascular Deseases</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-700">
+      <div class="grid-middle">
+        <div
+          class="grid grid-cols-1 gap-5 text-white w-11/12 mx-auto py-20 border-b-2 md:max-xl:grid-cols-2 xl:grid-cols-4"
+        >
+          <div class="py-5 px-4">
+            <img class="w-36" src="../images/logo.png" alt="" />
+            <p class="py-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+              harum eius libero minima aperiam quos rem. Dicta, facilis iure.
+              Cum provident atque nostrum? Alias officia ipsam aperiam libero
+              eveniet? Quidem?
+            </p>
+            <div class="loc flex p-2">
+              <img
+                class="px-4 w-20 object-contain"
+                src="../images/icons8-location-30.png"
+                alt="location"
+              />
+              <div class="loccontent flex flex-col">
+                <span>34th Avenue</span>
+                <span class="text-gray-500">New York, W2 3XE</span>
+              </div>
+            </div>
+            <div class="contact flex p-2">
+              <img
+                class="px-4 w-20 object-contain"
+                src="../images/icons8-smartphone-30.png"
+                alt="callUs"
+              />
+              <div class="contactcontent flex flex-col">
+                <span>+ 0800 2466 7921</span>
+                <span class="text-gray-500">medigroup@qode.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="py-5">
+            <h4>Latest Tweets</h4>
+            <div class="flex border-b-2">
+              <img
+                class="w-9 object-contain"
+                src="../images/icons8-twitter-30.png"
+                alt=""
+              />
+              <p class="group py-3">
+                <span class="group-hover:text-blue-700">@aliasadadm</span> Hi
+                <span class="group-hover:text-blue-700">@aliasadadm</span> , can
+                you please submit a ticket at
+                <span class="group-hover:text-blue-700"
+                  >https://t.co/JLV61aXG7d</span
+                >
+                and one of our support agent…
+                <span class="group-hover:text-blue-700"
+                  >https://t.co/yk57k1S9bS</span
+                >
+              </p>
+            </div>
+            <div class="flex border-b-2">
+              <img
+                class="w-9 object-contain"
+                src="../images/icons8-twitter-30.png"
+                alt=""
+              />
+              <p class="group py-3">
+                <span class="group-hover:text-blue-700">@HenrySefaBoaky1</span>
+                Check out our theme Gioia which has all necessary elements to
+                build a multi vendor marketplace.
+                <span class="group-hover:text-blue-700"
+                  >https://t.co/c9BlYxZBlL</span
+                >
+              </p>
+            </div>
+            <div class="flex border-b-2">
+              <img
+                class="w-9 object-contain"
+                src="../images/icons8-twitter-30.png"
+                alt=""
+              />
+              <p class="group py-3">
+                <span class="group-hover:text-blue-700">@dincompleteman</span>
+                When you import theme content, you also import the landing page
+                with all its elements…
+                <span class="group-hover:text-blue-700"
+                  >https://t.co/2AfTXnAHE2</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="py-5">
+            <h4>Recent Posts</h4>
+            <div class="flex py-4">
+              <img
+                class="w-20 object-contain rounded-full"
+                src="../images/avatar.jpeg"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="px-5"
+                  >integrative medicine and cancer treatment</span
+                >
+                <span class="px-5">July 11, 2016</span>
+              </div>
+            </div>
+            <div class="flex py-4">
+              <img
+                class="w-20 object-contain rounded-full"
+                src="../images/avatar.jpeg"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="px-5"
+                  >achieving better health care one patient at a time</span
+                >
+                <span class="px-5">July 11, 2016</span>
+              </div>
+            </div>
+            <div class="flex py-4">
+              <img
+                class="w-20 object-contain rounded-full"
+                src="../images/avatar.jpeg"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="px-5">ralph-jason</span>
+                <span class="px-5">July 11, 2016</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative py-10">
+            <div class="flex flex-col p-5 gray-watch">
+              <img
+                class="gray-watch p-3 rounded-full absolute top-[0%] left-[38%] xl:left-[33%]"
+                src="../images/icons8-clock-50.png"
+                alt=""
+              />
+              <span class="border-b-2 py-3">Monday:08am - 12pm</span>
+              <span class="border-b-2 py-3">Tuesday:01am - 5pm</span>
+              <span class="border-b-2 py-3">Wednesday:Free day</span>
+              <span class="border-b-2 py-3">Thursday:08am - 12pm</span>
+              <span class="border-b-2 py-3">Friday:08am - 12pm</span>
+              <span class="py-3">Saturday - Sunday:Closed</span>
+              <button class="px-6 py-2 bg-blue-500 text-white" type="submit">
+                MAKE AN APPOINTMENY
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col text-white w-10/12 mx-auto justify-between md:flex-row"
+        >
+          <span class="py-5">
+            © 2016 <span class="text-blue-400">Qode Interactive</span>, All
+            Rights Reserved
+          </span>
+          <div class="flex">
+            <span class="py-5 text-slate-400 hover:text-white px-2">HOME</span>
+            <span class="py-5 text-slate-400 hover:text-white px-2"
+              >ABOUT US</span
+            >
+            <span class="py-5 text-slate-400 hover:text-white px-2">BLOG</span>
+            <span class="py-5 text-slate-400 hover:text-white px-2">SHOP</span>
+            <span class="py-5 text-slate-400 hover:text-white px-2"
+              >CONTACT</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#new-product", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "30px",
+          pagination: false,
+        }).mount();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#featured-product", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "30px",
+          breakpoints: {
+            1200: {
+              perPage: 2,
+            },
+            700: {
+              perPage: 1,
+            },
+          },
+          pagination: false,
+        }).mount();
+      });
+    </script>
+
+    <script>
+      function myFunction() {
+        var myClock = document.getElementById("form");
+
+        var displaySetting = myClock.style.display;
+
+        var clockButton = document.getElementById("bookButton");
+
+        if (displaySetting == "none") {
+          myClock.style.display = "block";
+        } else {
+          myClock.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      // Original image sources
+      const originalSources = {
+        image1: "image1.png",
+        image2: "image1.png",
+        image3: "image1.png",
+        image4: "image1.png",
+      };
+
+      const newSources = {
+        image1: "image2.png", // Alternate image for toggling
+        image2: "image2.png",
+        image3: "image2.png",
+        image4: "image2.png",
+      };
+
+      // Track the currently active image
+      let activeImageId = null;
+
+      function toggleImage(event) {
+        const target = event.currentTarget; // The div that was clicked
+        const childImage = target.querySelector("img"); // Get the child image
+
+        if (childImage) {
+          // If the clicked image is already active, revert to original
+          if (activeImageId === childImage.id) {
+            childImage.src = originalSources[childImage.id];
+            activeImageId = null; // Reset active image
+          } else {
+            // Change the src of the child image to the alternate
+            if (activeImageId) {
+              // Revert the previously active image back to original
+              const previousImage = document.getElementById(activeImageId);
+              previousImage.src = originalSources[activeImageId];
+            }
+            childImage.src = newSources[childImage.id];
+            activeImageId = childImage.id; // Update active image
+          }
+        }
+      }
+      // Select all boxes
+      const boxes = document.querySelectorAll(".box");
+
+      boxes.forEach((box) => {
+        box.addEventListener("click", function () {
+          // Check if this box is already highlighted
+          const isHighlighted = this.classList.contains("highlight");
+
+          // Remove the 'highlight' class from all boxes and hide all children
+          boxes.forEach((b) => {
+            b.classList.remove("highlight");
+            const child = b.querySelector(".child");
+            if (child) {
+              child.style.display = "none"; // Hide the child div
+            }
+          });
+
+          // If the box was not highlighted, highlight it and show its child
+          if (!isHighlighted) {
+            this.classList.add("highlight");
+            const child = this.querySelector(".child");
+            if (child) {
+              child.style.display = "block"; // Show the child div
+            }
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        function counter(id, start, end, duration) {
+          let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 2 : -2,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+              current += increment;
+              obj.textContent = current;
+              if (current == end) {
+                clearInterval(timer);
+              }
+            }, step);
+        }
+        counter("count1", 0, 168, 3000);
+        counter("count2", 100, 2590, 500);
+        counter("count3", 0, 348, 3000);
+        counter("count4", 0, 1912, 3000);
+      });
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
